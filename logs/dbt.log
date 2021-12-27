@@ -29539,3 +29539,1594 @@ from `playground-325606`.`dataset_dbt`.`dqa_all_criteria`;
 Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
 2021-12-24 08:06:30.906219 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc25bb6ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc25f26eaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc25bb90940>]}
 2021-12-24 08:06:30.906689 (MainThread): Flushing usage events
+2021-12-27 11:34:46.754175 (MainThread): Running with dbt=0.21.0
+2021-12-27 11:34:46.937325 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/leerizza/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-12-27 11:34:46.937907 (MainThread): Tracking: tracking
+2021-12-27 11:34:46.945080 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9538dbb910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9537055670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95370556d0>]}
+2021-12-27 11:34:46.953197 (MainThread): Partial parsing not enabled
+2021-12-27 11:34:46.966521 (MainThread): Parsing macros/catalog.sql
+2021-12-27 11:34:46.971628 (MainThread): Parsing macros/etc.sql
+2021-12-27 11:34:46.973126 (MainThread): Parsing macros/adapters.sql
+2021-12-27 11:34:46.990313 (MainThread): Parsing macros/materializations/seed.sql
+2021-12-27 11:34:46.992450 (MainThread): Parsing macros/materializations/copy.sql
+2021-12-27 11:34:46.994552 (MainThread): Parsing macros/materializations/view.sql
+2021-12-27 11:34:46.996681 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-12-27 11:34:46.997992 (MainThread): Parsing macros/materializations/table.sql
+2021-12-27 11:34:47.004002 (MainThread): Parsing macros/materializations/incremental.sql
+2021-12-27 11:34:47.014401 (MainThread): Parsing macros/core.sql
+2021-12-27 11:34:47.017286 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-12-27 11:34:47.018536 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-12-27 11:34:47.020351 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-12-27 11:34:47.021283 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-12-27 11:34:47.022358 (MainThread): Parsing macros/materializations/test.sql
+2021-12-27 11:34:47.027764 (MainThread): Parsing macros/materializations/helpers.sql
+2021-12-27 11:34:47.034869 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-12-27 11:34:47.052234 (MainThread): Parsing macros/materializations/view/view.sql
+2021-12-27 11:34:47.057773 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-12-27 11:34:47.060792 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-12-27 11:34:47.075927 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-12-27 11:34:47.077330 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-12-27 11:34:47.085146 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-12-27 11:34:47.095467 (MainThread): Parsing macros/materializations/table/table.sql
+2021-12-27 11:34:47.101112 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-12-27 11:34:47.114240 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-12-27 11:34:47.115609 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-12-27 11:34:47.138705 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-12-27 11:34:47.139981 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-12-27 11:34:47.141281 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-12-27 11:34:47.142459 (MainThread): Parsing macros/etc/query.sql
+2021-12-27 11:34:47.143239 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-12-27 11:34:47.145064 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-12-27 11:34:47.146362 (MainThread): Parsing macros/etc/datetime.sql
+2021-12-27 11:34:47.152954 (MainThread): Parsing macros/adapters/common.sql
+2021-12-27 11:34:47.348049 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_all_criteria".
+2021-12-27 11:34:47.357764 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_timeliness".
+2021-12-27 11:34:47.360608 (MainThread): Acquiring new bigquery connection "model.my_new_project.view_models_dqa".
+2021-12-27 11:34:47.364060 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_uniqueness".
+2021-12-27 11:34:47.366823 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_validity".
+2021-12-27 11:34:47.369758 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_completeness".
+2021-12-27 11:34:47.375480 (MainThread): Acquiring new bigquery connection "model.my_new_project.dqa_integrity".
+2021-12-27 11:34:47.398396 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.399937 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.401365 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.402651 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.403956 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.405376 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.406787 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.408113 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.409379 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.410642 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-12-27 11:34:47.422442 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536f078b0>]}
+2021-12-27 11:34:47.427075 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-12-27 11:34:47.427455 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536f07eb0>]}
+2021-12-27 11:34:47.427709 (MainThread): Found 7 models, 10 tests, 0 snapshots, 0 analyses, 184 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-12-27 11:34:47.429229 (MainThread): 
+2021-12-27 11:34:47.429527 (MainThread): Acquiring new bigquery connection "master".
+2021-12-27 11:34:47.430391 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_playground-325606".
+2021-12-27 11:34:47.430636 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-12-27 11:34:47.947995 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_playground-325606_dataset_dbt".
+2021-12-27 11:34:47.948541 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-12-27 11:34:47.954887 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:34:48.351865 (MainThread): 18:34:48 | Concurrency: 1 threads (target='prod')
+2021-12-27 11:34:48.352369 (MainThread): 18:34:48 | 
+2021-12-27 11:34:48.361426 (Thread-1): Began running node model.my_new_project.dqa_all_criteria
+2021-12-27 11:34:48.362170 (Thread-1): 18:34:48 | 1 of 6 START table model dataset_dbt.dqa_all_criteria................ [RUN]
+2021-12-27 11:34:48.362897 (Thread-1): Acquiring new bigquery connection "model.my_new_project.dqa_all_criteria".
+2021-12-27 11:34:48.363289 (Thread-1): Compiling model.my_new_project.dqa_all_criteria
+2021-12-27 11:34:48.367838 (Thread-1): Writing injected SQL for node "model.my_new_project.dqa_all_criteria"
+2021-12-27 11:34:48.368541 (Thread-1): finished collecting timing info
+2021-12-27 11:34:48.386029 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:34:48.389562 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:34:48.764784 (Thread-1): Writing runtime SQL for node "model.my_new_project.dqa_all_criteria"
+2021-12-27 11:34:48.765135 (Thread-1): On model.my_new_project.dqa_all_criteria: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.dqa_all_criteria"} */
+
+
+  create or replace table `playground-325606`.`dataset_dbt`.`dqa_all_criteria`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select * from `playground-325606.dataset_dbt.dqa_uniqueness`
+union all
+select * from `playground-325606.dataset_dbt.dqa_completeness`
+union all
+select * from `playground-325606.dataset_dbt.dqa_validity`
+union all
+select * from `playground-325606.dataset_dbt.dqa_timeliness`
+  );
+    
+2021-12-27 11:34:52.162778 (Thread-1): finished collecting timing info
+2021-12-27 11:34:52.163545 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536ef5460>]}
+2021-12-27 11:34:52.164212 (Thread-1): 18:34:52 | 1 of 6 OK created table model dataset_dbt.dqa_all_criteria........... [CREATE TABLE (33.0 rows, 4.7 KB processed) in 3.80s]
+2021-12-27 11:34:52.164563 (Thread-1): Finished running node model.my_new_project.dqa_all_criteria
+2021-12-27 11:34:52.164899 (Thread-1): Began running node model.my_new_project.dqa_completeness
+2021-12-27 11:34:52.165601 (Thread-1): 18:34:52 | 2 of 6 START table model dataset_dbt.dqa_completeness................ [RUN]
+2021-12-27 11:34:52.166169 (Thread-1): Acquiring new bigquery connection "model.my_new_project.dqa_completeness".
+2021-12-27 11:34:52.166422 (Thread-1): Compiling model.my_new_project.dqa_completeness
+2021-12-27 11:34:52.172027 (Thread-1): Writing injected SQL for node "model.my_new_project.dqa_completeness"
+2021-12-27 11:34:52.172448 (Thread-1): finished collecting timing info
+2021-12-27 11:34:52.173725 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:34:52.177108 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:34:52.520943 (Thread-1): Writing runtime SQL for node "model.my_new_project.dqa_completeness"
+2021-12-27 11:34:52.522096 (Thread-1): On model.my_new_project.dqa_completeness: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.dqa_completeness"} */
+
+
+  create or replace table `playground-325606`.`dataset_dbt`.`dqa_completeness`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with x as (
+  select 
+    ga_session_id, 
+    user_id, 
+    user_pseudo_id, 
+    event_name, 
+    action_type_cleaned, 
+    user_first_timestamp_gmt7, 
+    timestamp_gmt7, 
+    date_gmt7, 
+    time_gmt7, 
+    hour_gmt7, 
+    device_category_cleaned, 
+    engagement_time_msec, 
+    material_id, 
+    module_id, 
+    video_id, 
+    video_inspirasi_id, 
+    video_inspirasi_playslist_id, 
+    quiz_id, 
+    text_id, 
+    open_reflection_id, 
+    save_reflection_id, 
+    post_test_result, 
+    event_params_source, 
+    event_params_page_location, 
+    event_params_page_referrer, 
+    event_params_page_path, 
+    event_params_page_title, 
+    event_params_product 
+  FROM 
+    `playground-325606.dataset_dbt.event_tracker_belajar`
+) 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result1.criteria, 
+  result1.metrics, 
+  result1.total_data, 
+  result1.good_data, 
+  result1.bad_data, 
+  cast(
+    cast(result1.good_data * 100 as decimal)/ result1.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result1.bad_data * 100 as decimal)/ result1.total_data as numeric
+  ) as percentage_bad_data, 
+  "ga_session_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank ga_session_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(ga_session_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(ga_session_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result1 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result2.criteria, 
+  result2.metrics, 
+  result2.total_data, 
+  result2.good_data, 
+  result2.bad_data, 
+  cast(
+    cast(result2.good_data * 100 as decimal)/ result2.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result2.bad_data * 100 as decimal)/ result2.total_data as numeric
+  ) as percentage_bad_data, 
+  "user_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank user_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(user_id, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(user_id, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result2 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result3.criteria, 
+  result3.metrics, 
+  result3.total_data, 
+  result3.good_data, 
+  result3.bad_data, 
+  cast(
+    cast(result3.good_data * 100 as decimal)/ result3.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result3.bad_data * 100 as decimal)/ result3.total_data as numeric
+  ) as percentage_bad_data, 
+  "user_pseudo_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank user_pseudo_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull (cast(user_pseudo_id as string), '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull (cast(user_pseudo_id as string), '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result3 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result4.criteria, 
+  result4.metrics, 
+  result4.total_data, 
+  result4.good_data, 
+  result4.bad_data, 
+  cast(
+    cast(result4.good_data * 100 as decimal)/ result4.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result4.bad_data * 100 as decimal)/ result4.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_name" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_name' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_name, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_name, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result4 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result5.criteria, 
+  result5.metrics, 
+  result5.total_data, 
+  result5.good_data, 
+  result5.bad_data, 
+  cast(
+    cast(result5.good_data * 100 as decimal)/ result5.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result5.bad_data * 100 as decimal)/ result5.total_data as numeric
+  ) as percentage_bad_data, 
+  "action_type_cleaned" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank action_type_cleaned' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(action_type_cleaned, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(action_type_cleaned, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result5 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result6.criteria, 
+  result6.metrics, 
+  result6.total_data, 
+  result6.good_data, 
+  result6.bad_data, 
+  cast(
+    cast(result6.good_data * 100 as decimal)/ result6.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result6.bad_data * 100 as decimal)/ result6.total_data as numeric
+  ) as percentage_bad_data, 
+  "user_first_timestamp_gmt7" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank user_first_timestamp_gmt7' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(
+            user_first_timestamp_gmt7 as string
+          ), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(
+            user_first_timestamp_gmt7 as string
+          ), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result6 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result7.criteria, 
+  result7.metrics, 
+  result7.total_data, 
+  result7.good_data, 
+  result7.bad_data, 
+  cast(
+    cast(result7.good_data * 100 as decimal)/ result7.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result7.bad_data * 100 as decimal)/ result7.total_data as numeric
+  ) as percentage_bad_data, 
+  "timestamp_gmt7" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank timestamp_gmt7' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(timestamp_gmt7 as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(timestamp_gmt7 as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result7 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result8.criteria, 
+  result8.metrics, 
+  result8.total_data, 
+  result8.good_data, 
+  result8.bad_data, 
+  cast(
+    cast(result8.good_data * 100 as decimal)/ result8.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result8.bad_data * 100 as decimal)/ result8.total_data as numeric
+  ) as percentage_bad_data, 
+  "date_gmt7" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank date_gmt7' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(date_gmt7 as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(date_gmt7 as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result8 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result9.criteria, 
+  result9.metrics, 
+  result9.total_data, 
+  result9.good_data, 
+  result9.bad_data, 
+  cast(
+    cast(result9.good_data * 100 as decimal)/ result9.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result9.bad_data * 100 as decimal)/ result9.total_data as numeric
+  ) as percentage_bad_data, 
+  "time_gmt7" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank time_gmt7' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(cast(time_gmt7 as string), '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(cast(time_gmt7 as string), '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result9 
+
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result10.criteria, 
+  result10.metrics, 
+  result10.total_data, 
+  result10.good_data, 
+  result10.bad_data, 
+  cast(
+    cast(
+      result10.good_data * 100 as decimal
+    )/ result10.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result10.bad_data * 100 as decimal)/ result10.total_data as numeric
+  ) as percentage_bad_data, 
+  "hour_gmt7" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank hour_gmt7' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(hour_gmt7 as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(hour_gmt7 as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result10 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result11.criteria, 
+  result11.metrics, 
+  result11.total_data, 
+  result11.good_data, 
+  result11.bad_data, 
+  cast(
+    cast(
+      result11.good_data * 100 as decimal
+    )/ result11.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result11.bad_data * 100 as decimal)/ result11.total_data as numeric
+  ) as percentage_bad_data, 
+  "device_category_cleaned" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank device_category_cleaned' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(device_category_cleaned, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(device_category_cleaned, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result11 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result12.criteria, 
+  result12.metrics, 
+  result12.total_data, 
+  result12.good_data, 
+  result12.bad_data, 
+  cast(
+    cast(
+      result12.good_data * 100 as decimal
+    )/ result12.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result12.bad_data * 100 as decimal)/ result12.total_data as numeric
+  ) as percentage_bad_data, 
+  "engagement_time_msec" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank engagement_time_msec' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(engagement_time_msec as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(engagement_time_msec as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result12 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result13.criteria, 
+  result13.metrics, 
+  result13.total_data, 
+  result13.good_data, 
+  result13.bad_data, 
+  cast(
+    cast(
+      result13.good_data * 100 as decimal
+    )/ result13.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result13.bad_data * 100 as decimal)/ result13.total_data as numeric
+  ) as percentage_bad_data, 
+  "material_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank material_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(material_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(material_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned IN ('open_text', 'play_video_material', 'open_quiz', 'open_reflection', 'complete_material_quiz', 'save_reflection', 'play_material_video', 'play_video')  
+  ) result13 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result14.criteria, 
+  result14.metrics, 
+  result14.total_data, 
+  result14.good_data, 
+  result14.bad_data, 
+  cast(
+    cast(
+      result14.good_data * 100 as decimal
+    )/ result14.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result14.bad_data * 100 as decimal)/ result14.total_data as numeric
+  ) as percentage_bad_data, 
+  "module_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank module_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(module_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(module_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned IN ('open_text', 'play_video_material', 'open_quiz', 'open_reflection', 'complete_material_quiz', 'save_reflection', 'play_material_video', 'play_video')  
+  ) result14 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result15.criteria, 
+  result15.metrics, 
+  result15.total_data, 
+  result15.good_data, 
+  result15.bad_data, 
+  cast(
+    cast(
+      result15.good_data * 100 as decimal
+    )/ result15.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result15.bad_data * 100 as decimal)/ result15.total_data as numeric
+  ) as percentage_bad_data, 
+  "video_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank video_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(video_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(video_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = "play_video"  
+  ) result15 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result16.criteria, 
+  result16.metrics, 
+  result16.total_data, 
+  result16.good_data, 
+  result16.bad_data, 
+  cast(
+    cast(
+      result16.good_data * 100 as decimal
+    )/ result16.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result16.bad_data * 100 as decimal)/ result16.total_data as numeric
+  ) as percentage_bad_data, 
+  "video_inspirasi_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank video_inspirasi_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(video_inspirasi_id, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(video_inspirasi_id, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = "play_video_inspirasi"  
+  ) result16 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result17.criteria, 
+  result17.metrics, 
+  result17.total_data, 
+  result17.good_data, 
+  result17.bad_data, 
+  cast(
+    cast(
+      result17.good_data * 100 as decimal
+    )/ result17.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result17.bad_data * 100 as decimal)/ result17.total_data as numeric
+  ) as percentage_bad_data, 
+  "video_inspirasi_playslist_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank video_inspirasi_playslist_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(
+            video_inspirasi_playslist_id as string
+          ), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(
+            video_inspirasi_playslist_id as string
+          ), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = "play_video_inspirasi"  
+  ) result17 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result18.criteria, 
+  result18.metrics, 
+  result18.total_data, 
+  result18.good_data, 
+  result18.bad_data, 
+  cast(
+    cast(
+      result18.good_data * 100 as decimal
+    )/ result18.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result18.bad_data * 100 as decimal)/ result18.total_data as numeric
+  ) as percentage_bad_data, 
+  "quiz_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank quiz_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(quiz_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(quiz_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = 'open_quiz'  
+  ) result18 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result19.criteria, 
+  result19.metrics, 
+  result19.total_data, 
+  result19.good_data, 
+  result19.bad_data, 
+  cast(
+    cast(
+      result19.good_data * 100 as decimal
+    )/ result19.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result19.bad_data * 100 as decimal)/ result19.total_data as numeric
+  ) as percentage_bad_data, 
+  "text_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank text_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(text_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(text_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = 'open_text'  
+  ) result19 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result20.criteria, 
+  result20.metrics, 
+  result20.total_data, 
+  result20.good_data, 
+  result20.bad_data, 
+  cast(
+    cast(
+      result20.good_data * 100 as decimal
+    )/ result20.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result20.bad_data * 100 as decimal)/ result20.total_data as numeric
+  ) as percentage_bad_data, 
+  "open_reflection_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank open_reflection_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(open_reflection_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(open_reflection_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = "open_reflection"  
+  ) result20 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result21.criteria, 
+  result21.metrics, 
+  result21.total_data, 
+  result21.good_data, 
+  result21.bad_data, 
+  cast(
+    cast(
+      result21.good_data * 100 as decimal
+    )/ result21.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result21.bad_data * 100 as decimal)/ result21.total_data as numeric
+  ) as percentage_bad_data, 
+  "save_reflection_id" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank save_reflection_id' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(
+          cast(save_reflection_id as string), 
+          ''
+        )<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(
+          cast(save_reflection_id as string), 
+          ''
+        )= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = 'save_reflection'  
+  ) result21 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result22.criteria, 
+  result22.metrics, 
+  result22.total_data, 
+  result22.good_data, 
+  result22.bad_data, 
+  cast(
+    cast(
+      result22.good_data * 100 as decimal
+    )/ result22.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result22.bad_data * 100 as decimal)/ result22.total_data as numeric
+  ) as percentage_bad_data, 
+  "post_test_result" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank post_test_result' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(post_test_result, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(post_test_result, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+    where action_type_cleaned = 'finished_post_test'  
+  ) result22 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result23.criteria, 
+  result23.metrics, 
+  result23.total_data, 
+  result23.good_data, 
+  result23.bad_data, 
+  cast(
+    cast(
+      result23.good_data * 100 as decimal
+    )/ result23.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result23.bad_data * 100 as decimal)/ result23.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_source" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_source' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_source, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_source, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result23 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result24.criteria, 
+  result24.metrics, 
+  result24.total_data, 
+  result24.good_data, 
+  result24.bad_data, 
+  cast(
+    cast(
+      result24.good_data * 100 as decimal
+    )/ result24.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result24.bad_data * 100 as decimal)/ result24.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_page_location" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_page_location' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_page_location, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_page_location, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result24 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result25.criteria, 
+  result25.metrics, 
+  result25.total_data, 
+  result25.good_data, 
+  result25.bad_data, 
+  cast(
+    cast(
+      result25.good_data * 100 as decimal
+    )/ result25.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result25.bad_data * 100 as decimal)/ result25.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_page_referrer" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_page_referrer' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_page_referrer, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_page_referrer, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result25 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result26.criteria, 
+  result26.metrics, 
+  result26.total_data, 
+  result26.good_data, 
+  result26.bad_data, 
+  cast(
+    cast(
+      result26.good_data * 100 as decimal
+    )/ result26.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result26.bad_data * 100 as decimal)/ result26.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_page_path" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_page_path' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_page_path, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_page_path, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result26 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result27.criteria, 
+  result27.metrics, 
+  result27.total_data, 
+  result27.good_data, 
+  result27.bad_data, 
+  cast(
+    cast(
+      result27.good_data * 100 as decimal
+    )/ result27.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result27.bad_data * 100 as decimal)/ result27.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_page_title" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_page_title' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_page_title, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_page_title, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result27 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result28.criteria, 
+  result28.metrics, 
+  result28.total_data, 
+  result28.good_data, 
+  result28.bad_data, 
+  cast(
+    cast(
+      result28.good_data * 100 as decimal
+    )/ result28.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result28.bad_data * 100 as decimal)/ result28.total_data as numeric
+  ) as percentage_bad_data, 
+  "event_params_product" field_name_checking 
+from 
+  (
+    select 
+      'Completeness' criteria, 
+      'field mandatory is null/blank event_params_product' metrics, 
+      count(ga_session_id) total_data, 
+      count(
+        case when ifnull(event_params_product, '')<> '' then 'pass' end
+      ) as good_data, 
+      count(
+        case when ifnull(event_params_product, '')= '' then 'fail' end
+      ) as bad_data 
+    from 
+      x
+  ) result28
+  );
+    
+2021-12-27 11:34:53.109355 (Thread-1): unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 33362), raddr=('142.250.4.95', 443)>
+2021-12-27 11:34:53.109934 (Thread-1): unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43666), raddr=('34.101.5.42', 443)>
+2021-12-27 11:34:53.110331 (Thread-1): unclosed <ssl.SSLSocket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 33366), raddr=('142.250.4.95', 443)>
+2021-12-27 11:34:53.110701 (Thread-1): unclosed <ssl.SSLSocket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43670), raddr=('34.101.5.42', 443)>
+2021-12-27 11:34:53.111126 (Thread-1): unclosed <ssl.SSLSocket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 33370), raddr=('142.250.4.95', 443)>
+2021-12-27 11:34:53.111487 (Thread-1): unclosed <ssl.SSLSocket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43674), raddr=('34.101.5.42', 443)>
+2021-12-27 11:34:56.690238 (Thread-1): finished collecting timing info
+2021-12-27 11:34:56.691362 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536ef5040>]}
+2021-12-27 11:34:56.692207 (Thread-1): 18:34:56 | 2 of 6 OK created table model dataset_dbt.dqa_completeness........... [CREATE TABLE (28.0 rows, 2.6 MB processed) in 4.53s]
+2021-12-27 11:34:56.692625 (Thread-1): Finished running node model.my_new_project.dqa_completeness
+2021-12-27 11:34:56.693002 (Thread-1): Began running node model.my_new_project.dqa_timeliness
+2021-12-27 11:34:56.693928 (Thread-1): 18:34:56 | 3 of 6 START table model dataset_dbt.dqa_timeliness.................. [RUN]
+2021-12-27 11:34:56.694693 (Thread-1): Acquiring new bigquery connection "model.my_new_project.dqa_timeliness".
+2021-12-27 11:34:56.695204 (Thread-1): Compiling model.my_new_project.dqa_timeliness
+2021-12-27 11:34:56.699734 (Thread-1): Writing injected SQL for node "model.my_new_project.dqa_timeliness"
+2021-12-27 11:34:56.700427 (Thread-1): finished collecting timing info
+2021-12-27 11:34:56.703573 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:34:56.710160 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:34:57.065407 (Thread-1): Writing runtime SQL for node "model.my_new_project.dqa_timeliness"
+2021-12-27 11:34:57.067196 (Thread-1): On model.my_new_project.dqa_timeliness: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.dqa_timeliness"} */
+
+
+  create or replace table `playground-325606`.`dataset_dbt`.`dqa_timeliness`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result.criteria, 
+  result.metrics, 
+  result.total_data, 
+  result.good_data, 
+  result.bad_data, 
+  cast(
+    cast(result.good_data * 100 as decimal)/ result.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result.bad_data * 100 as decimal)/ result.total_data as numeric
+  ) as percentage_bad_data, 
+  "updated_at" field_name_checking 
+from 
+  (
+    select 
+      'Timeliness' criteria, 
+      'freshness data Day - 1 on staging table' metrics, 
+      count(updated_at) total_data, 
+      count(
+        case when updated_at in (
+          select 
+            updated_at 
+          from 
+            `playground-325606.dataset_dbt.event_tracker_belajar`
+          where 
+            date(
+              current_date()
+            ) < DATE_SUB(
+              current_date(), 
+              interval 1 day
+            )
+        ) then 'true' end
+      ) as good_data, 
+      count(
+        case when updated_at not in (
+          select 
+            updated_at 
+          from 
+            `playground-325606.dataset_dbt.event_tracker_belajar`
+          where 
+            date(
+              current_date()
+            ) < DATE_SUB(
+              current_date(), 
+              interval 1 day
+            )
+        ) then 'false' end
+      ) as bad_data, 
+    from 
+      `playground-325606.dataset_dbt.event_tracker_belajar`
+  ) result
+  );
+    
+2021-12-27 11:35:00.751998 (Thread-1): finished collecting timing info
+2021-12-27 11:35:00.752968 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536ef5670>]}
+2021-12-27 11:35:00.753745 (Thread-1): 18:35:00 | 3 of 6 OK created table model dataset_dbt.dqa_timeliness............. [CREATE TABLE (1.0 rows, 63.7 KB processed) in 4.06s]
+2021-12-27 11:35:00.754165 (Thread-1): Finished running node model.my_new_project.dqa_timeliness
+2021-12-27 11:35:00.754626 (Thread-1): Began running node model.my_new_project.dqa_uniqueness
+2021-12-27 11:35:00.755386 (Thread-1): 18:35:00 | 4 of 6 START table model dataset_dbt.dqa_uniqueness.................. [RUN]
+2021-12-27 11:35:00.756099 (Thread-1): Acquiring new bigquery connection "model.my_new_project.dqa_uniqueness".
+2021-12-27 11:35:00.756571 (Thread-1): Compiling model.my_new_project.dqa_uniqueness
+2021-12-27 11:35:00.763353 (Thread-1): Writing injected SQL for node "model.my_new_project.dqa_uniqueness"
+2021-12-27 11:35:00.763978 (Thread-1): finished collecting timing info
+2021-12-27 11:35:00.766141 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:35:00.771275 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:35:01.197306 (Thread-1): Writing runtime SQL for node "model.my_new_project.dqa_uniqueness"
+2021-12-27 11:35:01.198138 (Thread-1): On model.my_new_project.dqa_uniqueness: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.dqa_uniqueness"} */
+
+
+  create or replace table `playground-325606`.`dataset_dbt`.`dqa_uniqueness`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with x as (
+
+    select distinct 
+date_gmt7,
+time_gmt7,
+hour_gmt7, 
+timestamp_gmt7,
+event_name,
+ga_session_id,
+user_id,
+event_params_page_title,
+event_params_product,
+action_type_cleaned, count(1) total
+FROM `playground-325606.dataset_dbt.event_tracker_belajar`
+group by date_gmt7,
+time_gmt7,
+hour_gmt7, 
+timestamp_gmt7,
+event_name,
+ga_session_id,
+user_id,
+event_params_page_title,
+event_params_product,
+action_type_cleaned
+
+)
+
+select datetime(current_timestamp(), "Asia/Jakarta") as time_execution, result.criteria, result.metrics, result.total_data, result.good_data, result.bad_data, cast(cast(result.good_data * 100 as decimal)/result.total_data as numeric) as percentage_good_data, cast(cast(result.bad_data * 100 as decimal)/result.total_data as numeric) as percentage_bad_data, "date_gmt7, time_gmt7, hour_gmt7, timestamp_gmt7, event_name, ga_session_id, user_id, event_params_page_title, event_params_product, action_type_cleaned" field_name_checking
+from (
+select 'Uniqueness' criteria,
+'duplicate in rows' metrics,
+count(x.total ) as total_data,
+count(
+    case 
+    when (x.total = 1) then 'pass' end ) as good_data,
+count(
+    case
+    when (x.total > 1) then 'fail' end ) as bad_data        
+from x
+)result
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2021-12-27 11:35:04.499260 (Thread-1): finished collecting timing info
+2021-12-27 11:35:04.500335 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9534d92d60>]}
+2021-12-27 11:35:04.501149 (Thread-1): 18:35:04 | 4 of 6 OK created table model dataset_dbt.dqa_uniqueness............. [CREATE TABLE (1.0 rows, 1018.8 KB processed) in 3.74s]
+2021-12-27 11:35:04.501589 (Thread-1): Finished running node model.my_new_project.dqa_uniqueness
+2021-12-27 11:35:04.502154 (Thread-1): Began running node model.my_new_project.dqa_validity
+2021-12-27 11:35:04.502939 (Thread-1): 18:35:04 | 5 of 6 START table model dataset_dbt.dqa_validity.................... [RUN]
+2021-12-27 11:35:04.503733 (Thread-1): Acquiring new bigquery connection "model.my_new_project.dqa_validity".
+2021-12-27 11:35:04.504151 (Thread-1): Compiling model.my_new_project.dqa_validity
+2021-12-27 11:35:04.509781 (Thread-1): Writing injected SQL for node "model.my_new_project.dqa_validity"
+2021-12-27 11:35:04.511066 (Thread-1): finished collecting timing info
+2021-12-27 11:35:04.513818 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:35:04.519184 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-12-27 11:35:09.911954 (Thread-1): Writing runtime SQL for node "model.my_new_project.dqa_validity"
+2021-12-27 11:35:09.917549 (Thread-1): On model.my_new_project.dqa_validity: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.dqa_validity"} */
+
+
+  create or replace table `playground-325606`.`dataset_dbt`.`dqa_validity`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with x as (
+  select 
+    user_id,
+    ga_session_id,
+    video_inspirasi_id  
+  FROM 
+    `playground-325606.dataset_dbt.event_tracker_belajar`
+)
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result1.criteria, 
+  result1.metrics, 
+  result1.total_data, 
+  result1.good_data, 
+  result1.bad_data, 
+  cast(
+    cast(result1.good_data * 100 as decimal)/ result1.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result1.bad_data * 100 as decimal)/ result1.total_data as numeric
+  ) as percentage_bad_data, 
+  "user_id" field_name_checking 
+from 
+  (
+    select 
+      'Validity' criteria, 
+      'not valid format, syntax or length user_id' metrics, 
+      count(x.user_id) total_data, 
+      count(
+        case when length(x.user_id) = 10 then 'pass' end
+      ) as good_data, 
+      count(
+        case when length(x.user_id) < 10 
+        or length(x.user_id) > 10 then 'fail' end
+      ) as bad_data, 
+    from 
+      x
+  ) result1 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result2.criteria, 
+  result2.metrics, 
+  result2.total_data, 
+  result2.good_data, 
+  result2.bad_data, 
+  cast(
+    cast(result2.good_data * 100 as decimal)/ result2.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result2.bad_data * 100 as decimal)/ result2.total_data as numeric
+  ) as percentage_bad_data, 
+  "ga_session_id" field_name_checking 
+from 
+  (
+    select 
+      'Validity' criteria, 
+      'not valid format, syntax or length ga_session_id' metrics, 
+      count(x.ga_session_id) total_data, 
+      count(
+        case when length(
+          cast(x.ga_session_id as string)
+        ) = 10 then 'pass' end
+      ) as good_data, 
+      count(
+        case when length(
+          cast(x.ga_session_id as string)
+        )< 10 
+        or length(
+          cast(x.ga_session_id as string)
+        ) > 10 then 'fail' end
+      ) as bad_data, 
+    from 
+      x
+  ) result2 
+union all 
+select 
+  datetime(
+    current_timestamp(), 
+    "Asia/Jakarta"
+  ) as time_execution, 
+  result3.criteria, 
+  result3.metrics, 
+  result3.total_data, 
+  result3.good_data, 
+  result3.bad_data, 
+  cast(
+    cast(result3.good_data * 100 as decimal)/ result3.total_data as numeric
+  ) as percentage_good_data, 
+  cast(
+    cast(result3.bad_data * 100 as decimal)/ result3.total_data as numeric
+  ) as percentage_bad_data, 
+  "video_inspirasi_id" field_name_checking 
+from 
+  (
+    select 
+      'Validity' criteria, 
+      'not valid format, syntax or length video_inspirasi_id' metrics, 
+      count(x.video_inspirasi_id) total_data, 
+      count(
+        case when length(x.video_inspirasi_id) = 11 then 'pass' end
+      ) as good_data, 
+      count(
+        case when length(x.video_inspirasi_id) < 11 
+        or length(x.video_inspirasi_id) > 11 then 'fail' end
+      ) as bad_data, 
+    from 
+      x
+  ) result3
+  );
+    
+2021-12-27 11:35:13.434632 (Thread-1): finished collecting timing info
+2021-12-27 11:35:13.435716 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9534d92e80>]}
+2021-12-27 11:35:13.436600 (Thread-1): 18:35:13 | 5 of 6 OK created table model dataset_dbt.dqa_validity............... [CREATE TABLE (3.0 rows, 113.1 KB processed) in 8.93s]
+2021-12-27 11:35:13.437034 (Thread-1): Finished running node model.my_new_project.dqa_validity
+2021-12-27 11:35:13.438517 (Thread-1): Began running node model.my_new_project.view_models_dqa
+2021-12-27 11:35:13.439148 (Thread-1): 18:35:13 | 6 of 6 START view model dataset_dbt.view_models_dqa.................. [RUN]
+2021-12-27 11:35:13.440298 (Thread-1): Acquiring new bigquery connection "model.my_new_project.view_models_dqa".
+2021-12-27 11:35:13.440692 (Thread-1): Compiling model.my_new_project.view_models_dqa
+2021-12-27 11:35:13.446610 (Thread-1): Writing injected SQL for node "model.my_new_project.view_models_dqa"
+2021-12-27 11:35:13.447277 (Thread-1): finished collecting timing info
+2021-12-27 11:35:13.463531 (Thread-1): Writing runtime SQL for node "model.my_new_project.view_models_dqa"
+2021-12-27 11:35:13.463923 (Thread-1): Opening a new connection, currently in state closed
+2021-12-27 11:35:13.467468 (Thread-1): On model.my_new_project.view_models_dqa: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "default", "target_name": "prod", "node_id": "model.my_new_project.view_models_dqa"} */
+
+
+  create or replace view `playground-325606`.`dataset_dbt`.`view_models_dqa`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `playground-325606`.`dataset_dbt`.`dqa_uniqueness`
+;
+select *
+from `playground-325606`.`dataset_dbt`.`dqa_completeness`
+;
+select *
+from `playground-325606`.`dataset_dbt`.`dqa_timeliness`
+;
+select *
+from `playground-325606`.`dataset_dbt`.`dqa_validity`
+;
+select *
+from `playground-325606`.`dataset_dbt`.`dqa_all_criteria`;
+
+
+2021-12-27 11:35:21.585218 (Thread-1): finished collecting timing info
+2021-12-27 11:35:21.590627 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '385aac02-05ca-4e75-a25f-eb4aa02e8eb2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9534caf370>]}
+2021-12-27 11:35:21.591327 (Thread-1): 18:35:21 | 6 of 6 OK created view model dataset_dbt.view_models_dqa............. [SCRIPT (9.2 KB processed) in 8.15s]
+2021-12-27 11:35:21.591719 (Thread-1): Finished running node model.my_new_project.view_models_dqa
+2021-12-27 11:35:21.593864 (MainThread): Acquiring new bigquery connection "master".
+2021-12-27 11:35:21.594671 (MainThread): 18:35:21 | 
+2021-12-27 11:35:21.595084 (MainThread): 18:35:21 | Finished running 5 table models, 1 view model in 34.17s.
+2021-12-27 11:35:21.595510 (MainThread): Connection 'master' was properly closed.
+2021-12-27 11:35:21.596004 (MainThread): Connection 'model.my_new_project.view_models_dqa' was properly closed.
+2021-12-27 11:35:21.599842 (MainThread): unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 33378), raddr=('142.250.4.95', 443)>
+2021-12-27 11:35:21.600287 (MainThread): unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43682), raddr=('34.101.5.42', 443)>
+2021-12-27 11:35:21.600585 (MainThread): unclosed <ssl.SSLSocket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 33382), raddr=('142.250.4.95', 443)>
+2021-12-27 11:35:21.600828 (MainThread): unclosed <ssl.SSLSocket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43686), raddr=('34.101.5.42', 443)>
+2021-12-27 11:35:21.601075 (MainThread): unclosed <ssl.SSLSocket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 36390), raddr=('172.217.194.95', 443)>
+2021-12-27 11:35:21.601290 (MainThread): unclosed <ssl.SSLSocket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.38', 43690), raddr=('34.101.5.42', 443)>
+2021-12-27 11:35:21.605855 (MainThread): 
+2021-12-27 11:35:21.606141 (MainThread): Completed successfully
+2021-12-27 11:35:21.606367 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2021-12-27 11:35:21.606667 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9534cbbe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9534ca2b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9536f1af40>]}
+2021-12-27 11:35:21.606995 (MainThread): Flushing usage events
